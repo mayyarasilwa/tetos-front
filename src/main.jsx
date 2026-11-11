@@ -7,8 +7,10 @@ import Rotas from './routes/Rotas'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <QueryClintProvider client={QUERYCLIENT}>
     <App>
       <Rotas />
     </App>
+    </QueryClintProvider>
   </StrictMode>,
 )

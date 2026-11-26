@@ -6,6 +6,7 @@ import Login from "../pages/Login";
 import Home from "../pages/Home";
 import Niveis from "../pages/Niveis";
 import ImoveisTipo from "../pages/ImoveisTipo";
+import Imoveis from "../pages/Imoveis";
 import Locatarios from "../pages/Locatarios";
 import Usuarios from "../pages/usuario";
 
@@ -33,6 +34,7 @@ const Rotas = () => {
                         <Route index element={<Home />} />
                         <Route path="niveis" element={<Niveis />} />
                         <Route path="imoveis-tipo" element={<ImoveisTipo />} />
+                        <Route path="imoveis" element={<Imoveis />} />
                         <Route path="locatarios" element={<Locatarios />} />
                         <Route path="usuarios" element={<Usuarios />} />
                     </Route>

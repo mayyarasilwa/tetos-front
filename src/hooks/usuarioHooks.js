@@ -1,4 +1,3 @@
-
 import { useMutation, useQuery } from "@tanstack/react-query"
 import { AXIOS, QUERYCLIENT } from "../services"
 
@@ -37,8 +36,8 @@ export const useCriarUsuario = () => {
 
 export const useEditarUsuario = () => {
     return useMutation({
-        mutationFn: async (dados, id) => {
-            const res = await AXIOS.put(`/usuarios/${id}`, dados);
+        mutationFn: async (dados) => {
+            const res = await AXIOS.put(`/usuarios/${dados.id}`, dados);
             return res.data;
         },
         onSuccess: () => {

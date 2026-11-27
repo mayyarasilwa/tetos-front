@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import { useContext } from "react";
 
@@ -9,6 +8,8 @@ import ImoveisTipo from "../pages/ImoveisTipo";
 import Imoveis from "../pages/Imoveis";
 import Locatarios from "../pages/Locatarios";
 import Usuarios from "../pages/usuario";
+import Manutencoes from "../pages/Manutencoes";
+import HistoricoImovel from "../pages/HistoricoImovel";
 
 import RotaProtegida from "./RotaProtegida";
 import PageLayout from "../layouts/PageLayout";
@@ -37,6 +38,8 @@ const Rotas = () => {
                         <Route path="imoveis" element={<Imoveis />} />
                         <Route path="locatarios" element={<Locatarios />} />
                         <Route path="usuarios" element={<Usuarios />} />
+                        <Route path="manutencoes" element={<Manutencoes />} />
+                        <Route path="historico-imovel" element={<HistoricoImovel />} />
                     </Route>
                 )}
 
